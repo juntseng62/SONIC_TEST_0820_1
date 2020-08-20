@@ -1,7 +1,8 @@
 from sonic_platform_base.sonic_thermal_control.thermal_manager_base import ThermalManagerBase
-from .thermal_infos import * # lgtm[py/polluting-import]
-from .thermal_conditions import * # lgtm[py/polluting-import]
-from .thermal_actions import * # lgtm[py/polluting-import]
+from . import thermal_infos
+from . import thermal_conditions
+from . import thermal_actions
+
 
 class ThermalManager(ThermalManagerBase):
     @classmethod
